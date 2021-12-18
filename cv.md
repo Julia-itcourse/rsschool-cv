@@ -52,11 +52,11 @@ Having good interpersonal, communication and presentation skills, I will become 
 1. **Accenture Operations**  2015-2020
     
     
-    Content review Team Lead on T&S project for Google.
+    _Content review Team Lead on T&S project for Google._
 2. **Aurora Trade Urkraine**  2012 - 2015
     
     
-    Import manager and translator.
+    _Import manager and translator._
 
 ****
 
