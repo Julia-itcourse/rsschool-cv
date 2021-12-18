@@ -88,7 +88,7 @@ function getEvenNumbers(numbersArray){
 ### Education ###
 
 * RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
-* GoIt Front-End Bootcamp
+* GoIt Front-End Bootcamp 2020-2021
 * Beijing Language and Culture University. Advanced Chinese course. 2010-2011
 * Kharkiv National Pedagogical University. English and Chinese linguistics. 2006-2012
 
