@@ -1,0 +1,34 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: $bg-primary;
+  color: $text;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+}

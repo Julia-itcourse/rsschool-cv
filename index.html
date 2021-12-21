@@ -1,1 +1,121 @@
-<h1>CV</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../sass/main.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <button class="burger" id="burger" title="Open menu"></button>
+      <nav class="navigation">
+        <ul class="navigation__list" id="navigation-list">
+          <li class="navigation__link"><a href="#">About Me</a></li>
+          <li class="navigation__link"><a href="#">Skills</a></li>
+          <li class="navigation__link"><a href="#">Projects</a></li>
+          <li class="navigation__link"><a href="#">Experience</a></li>
+          <li class="navigation__link"><a href="#">Education</a></li>
+          <li class="navigation__link"><a href="#">CV</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hero class="hero">
+      <div class="image-wrapper">
+        <div class="gallery__wrapper">
+          <img
+            class="hero__image"
+            src="./assets/photo.jpg"
+            alt="Photo of Julia Artemenko"
+          />
+          <div class="gallery__overlay">
+            <ul class="social">
+              <li class="social__item">
+                <a
+                  href=""
+                  aria-label="Link to facebook account"
+                  class="social__link"
+                >
+                  <svg class="social__icon">
+                    <use xlink:href="./assets/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href=""
+                  aria-label="Link to Twitter account"
+                  class="social__link"
+                >
+                  <svg class="social__icon">
+                    <use xlink:href="./assets/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href=""
+                  aria-label="Link to Pinterest account"
+                  class="social__link"
+                >
+                  <svg class="social__icon">
+                    <use xlink:href="./assets/sprite.svg#pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href=""
+                  aria-label="Link to Instagram account"
+                  class="social__link"
+                >
+                  <svg class="social__icon">
+                    <use xlink:href="./assets/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="hello-text">
+        <span class="tag">&lt;</span> Hello, World!
+        <span class="tag">/&gt;</span>
+      </p>
+      <h1 class="hero__title">I'm <span class="hero__name">Julia</span></h1>
+      <h2 class="hero__content">Junior Front-end developer</h2>
+    </hero>
+
+    <main>
+      <section>About Me</section>
+      <section>Skills</section>
+      <section>Projects</section>
+      <section>Experience</section>
+      <section>Education</section>
+      <section>CV</section>
+    </main>
+    <footer></footer>
+    <script>
+      const burger = document.getElementById("burger");
+      const navigationList = document.getElementById("navigation-list");
+
+      burger.addEventListener("click", () => {
+        console.log("in burger");
+        navigationList.classList.toggle("navigation-list--open");
+        burger.classList.toggle("burger--close");
+      });
+    </script>
+  </body>
+</html>
