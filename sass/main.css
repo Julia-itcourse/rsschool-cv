@@ -378,6 +378,34 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
+.section {
+  padding: 30px 10px;
+}
+
+.section__title {
+  position: relative;
+  text-transform: uppercase;
+  margin: auto;
+  text-align: center;
+}
+
+.section__title::after {
+  right: 50%;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+  top: 50px;
+  content: "";
+  position: absolute;
+  background: #febd69;
+  width: 60px;
+  height: 4px;
+  opacity: 1;
+}
+
+.section__content {
+  margin-top: 70px;
+}
+
 .page-header {
   padding-top: 35px;
   padding-bottom: 35px;
@@ -536,5 +564,21 @@ h1 {
 
 .hero__name {
   color: #febd69;
+}
+
+.about-section {
+  background-color: #37475a;
+}
+
+.list__title {
+  text-align: center;
+}
+
+.list__title--accent {
+  color: #febd69;
+}
+
+.projects-section {
+  background-color: #37475a;
 }
 /*# sourceMappingURL=main.css.map */
