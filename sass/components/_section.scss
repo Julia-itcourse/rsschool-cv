@@ -2,6 +2,10 @@
   padding: 30px 10px;
 }
 
+.section--light {
+  background-color: $bg-secondary;
+}
+
 .section__title {
   position: relative;
   text-transform: uppercase;

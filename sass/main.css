@@ -382,6 +382,10 @@ h1 {
   padding: 30px 10px;
 }
 
+.section--light {
+  background-color: #37475a;
+}
+
 .section__title {
   position: relative;
   text-transform: uppercase;
@@ -568,6 +572,7 @@ h1 {
 
 .about-section {
   background-color: #37475a;
+  text-align: center;
 }
 
 .list__title {
@@ -576,10 +581,6 @@ h1 {
 
 .list__title--accent {
   color: #febd69;
-}
-
-.projects-section {
-  background-color: #37475a;
 }
 
 .portfolio-list {
@@ -599,6 +600,8 @@ h1 {
   border: 1px solid #232f3e;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
 }
 
 .portfolio-element:hover {
@@ -612,6 +615,10 @@ h1 {
   opacity: 1;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-element:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .portfolio-link {
@@ -648,5 +655,65 @@ h1 {
           transform: translateY(100%);
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline {
+  margin: 70px auto 0;
+  max-width: 320px;
+  display: -ms-grid;
+  display: grid;
+  color: white;
+  -ms-grid-columns: 1fr 3px 1fr;
+      grid-template-columns: 1fr 3px 1fr;
+}
+
+.timeline__component {
+  margin: 0 20px 20px 20px;
+}
+
+.timeline__component--bg {
+  padding: 1.5em;
+  background-color: #37475a;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+  border-radius: 5px;
+}
+
+.timeline__component--bg-dark {
+  padding: 1.5em;
+  background-color: #232f3e;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+  border-radius: 5px;
+}
+
+.timeline__date--right {
+  text-align: right;
+}
+
+.timeline__middle {
+  position: relative;
+  background-color: white;
+}
+
+.timeline__point {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+
+.timeline__point--bottom {
+  top: initial;
+  bottom: 0;
+}
+
+.timeline__component:last-child {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
