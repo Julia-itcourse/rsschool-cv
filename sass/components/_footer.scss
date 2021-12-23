@@ -1,0 +1,20 @@
+.footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.links-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+.footer a {
+  color: $text;
+  text-decoration: underlinegit;
+}
+
+.footer a:hover {
+  color: $accent;
+}

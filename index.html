@@ -20,6 +20,7 @@
   </head>
   <body>
     <header class="page-header">
+      <div class="container">
       <button class="burger" id="burger" title="Open menu"></button>
       <nav class="navigation">
         <ul class="navigation__list" id="navigation-list">
@@ -31,8 +32,10 @@
           <li class="navigation__link"><a href="#">CV</a></li>
         </ul>
       </nav>
+    </div>
     </header>
     <hero class="hero">
+      <div class="container">
       <div class="image-wrapper">
         <div class="gallery__wrapper">
           <img
@@ -40,66 +43,20 @@
             src="./assets/photo.jpg"
             alt="Photo of Julia Artemenko"
           />
-          <div class="gallery__overlay">
-            <!-- <ul class="social">
-              <li class="social__item">
-                <a
-                  href=""
-                  aria-label="Link to facebook account"
-                  class="social__link"
-                >
-                  <svg class="social__icon">
-                    <use xlink:href="./assets/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a
-                  href=""
-                  aria-label="Link to Twitter account"
-                  class="social__link"
-                >
-                  <svg class="social__icon">
-                    <use xlink:href="./assets/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a
-                  href=""
-                  aria-label="Link to Pinterest account"
-                  class="social__link"
-                >
-                  <svg class="social__icon">
-                    <use xlink:href="./assets/sprite.svg#pinterest"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a
-                  href=""
-                  aria-label="Link to Instagram account"
-                  class="social__link"
-                >
-                  <svg class="social__icon">
-                    <use xlink:href="./assets/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul> -->
-          </div>
-        </div>
-      </div>
       <p class="hello-text">
         <span class="tag">&lt;</span> Hello, World!
         <span class="tag">/&gt;</span>
       </p>
       <h1 class="hero__title">I'm <span class="hero__name">Julia</span></h1>
       <h2 class="hero__content">Junior Front-end developer</h2>
+    </div>
+  </div>
+</div>
     </hero>
 
     <main>
       <section class=" section about-section">
+        <div class="container">
         <h3 class = "section__title">About Me</h3>
         <div class = "section__content">
         <p>For me front-end development is a creative journey, where I can combine my passion for challenges, learning new things every day and creating useful product. </p>
@@ -107,8 +64,10 @@
             I am looking for a company where I could use my knowledge and skills to contribute to overall success.</p>
 
         </p></div>
+      </div>
       </section>
       <section class="section">
+        <div class="container">
         <h3 class = "section__title">Skills</h3>
         <div class = "section__content">
             <div class = "list">
@@ -151,8 +110,11 @@
                         </ul></div>
 
         </div>
+      </div>
       </section>
+
       <section class = "section section--light">
+        <div class="container">
         <h3 class = "section__title">Projects</h3>
         <div class = "section__content">
             <ul class="portfolio-list">
@@ -217,8 +179,10 @@
             </ul>
           </div>
         </div>
+    
       </section>
       <section class="section">
+        <div class="container">
         <h3 class = "section__title">Experience</h3>
         <div class="timeline">
           <div class="timeline__component">
@@ -244,9 +208,10 @@
               </div>
           </div>
         
-        
+        </div>
      </section>
       <section class = "section section--light">
+        <div class="container">
         <h3 class = "section__title">Education</h3>
         <div class="timeline">
           <div class="timeline__component timeline__component--bg-dark">
@@ -274,11 +239,20 @@
               </div>
 
           </div>
-        
+        </div>
       </section>
-      <section>CV</section>
+      <section><div class="container">Something</div></section>
     </main>
-    <footer>footer</footer>
+    <footer class = "footer">
+      <div class="container">
+      <p> &copy; Julia Artemenko 2021</p>
+      <ul class="links-wrap"> 
+      <a href="https://github.com/Julia-itcourse" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/julia-artemenko/" target="_blank">LinkedIn</a>
+      <a href="https://rs.school/" target="_blank"><img src ="./assets/rs-logo.png" alt = "RS School logo" width = "100"/></a>
+      </ul>
+     </div>
+    </footer>
     <script>
       const burger = document.getElementById("burger");
       const navigationList = document.getElementById("navigation-list");
@@ -291,3 +265,39 @@
     </script>
   </body>
 </html>
+
+<!-- 
+<div class="contacts">
+  <ul class="social">
+    <li class="social__item">
+      <a
+        href=""
+        aria-label="Link to Linkedin acount"
+        class="social__link"
+      >
+        <svg class="social__icon">
+          <use xlink:href="./assets/sprite.svg#facebook"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social__item">
+      <a
+        href=""
+        aria-label="Link to Github account"
+        class="social__link"
+      >
+        <svg class="social__icon">
+          <use xlink:href="./assets/sprite.svg#twitter"></use>
+        </svg>
+      </a>
+    </li>
+    
+  </ul>
+  <ul class = "contacts-list">
+    <li> <a>Email me</a></li>
+    <li> <a></a></li>
+  </ul>
+  
+</div>
+</div>
+</div> -->

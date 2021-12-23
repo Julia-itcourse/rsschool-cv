@@ -379,7 +379,7 @@ h1 {
 }
 
 .section {
-  padding: 30px 10px;
+  padding: 30px 0;
 }
 
 .section--light {
@@ -413,10 +413,6 @@ h1 {
 .page-header {
   padding-top: 35px;
   padding-bottom: 35px;
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 320px;
-  margin: auto;
 }
 
 .burger {
@@ -713,7 +709,67 @@ h1 {
   bottom: 0;
 }
 
-.timeline__component:last-child {
+.timeline__component--no-margin {
   margin-bottom: 0;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.links-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.footer a {
+  color: #f8f0e4;
+  -webkit-text-decoration: underlinegit;
+          text-decoration: underlinegit;
+}
+
+.footer a:hover {
+  color: #febd69;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
