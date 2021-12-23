@@ -1,0 +1,20 @@
+.scroll-btn {
+  display: none;
+  text-transform: capitalize;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: pink;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: $transition;
+}
+.scroll-btn:hover {
+  background-color: $accent;
+}

@@ -242,6 +242,7 @@
         </div>
       </section>
       <section><div class="container">Something</div></section>
+     <button class="scroll-btn" onclick="topFunction()" id="scroll-btn" title="Go to top">Top</button>
     </main>
     <footer class = "footer">
       <div class="container">
@@ -258,10 +259,29 @@
       const navigationList = document.getElementById("navigation-list");
 
       burger.addEventListener("click", () => {
-        console.log("in burger");
         navigationList.classList.toggle("navigation-list--open");
         burger.classList.toggle("burger--close");
       });
+
+
+scrollBtn = document.getElementById("scroll-btn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+
     </script>
   </body>
 </html>

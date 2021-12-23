@@ -1,6 +1,7 @@
 .page-header {
   padding-top: 35px;
   padding-bottom: 35px;
+  position: relative;
 }
 
 .burger {
@@ -12,6 +13,10 @@
   background-position: center center;
   background-color: transparent;
   border: none;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .burger--close {
@@ -38,9 +43,23 @@
   padding: 0;
   display: none;
   text-align: center;
+  background-color: $bg-secondary;
+
+  width: 100%;
+  left: 0%;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 39px;
+    padding-right: 39px;
+    background-color: $bg-primary;
+  }
 }
 .navigation-list--open {
   display: block;
+  z-index: 5;
+  position: absolute;
 }
 .navigation__link {
   padding-top: 10px;
@@ -49,7 +68,7 @@
 }
 
 .navigation__link:hover {
-  background-color: $accent-secondary;
+  background-color: $bg-primary;
   transition: $transition;
 }
 
