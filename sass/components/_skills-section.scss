@@ -5,3 +5,27 @@
 .list__title--accent {
   color: $accent;
 }
+
+.flex-cont {
+  padding-top: 50px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 39px;
+    padding-right: 39px;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.flex-elem {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px * 2) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 3) / 4);
+  }
+}

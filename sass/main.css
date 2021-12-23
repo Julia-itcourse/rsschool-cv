@@ -474,6 +474,8 @@ h1 {
   display: none;
   text-align: center;
   background-color: #37475a;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
   left: 0%;
 }
@@ -584,9 +586,12 @@ h1 {
 }
 
 .hero__image {
-  width: 100%;
+  width: 300px;
   height: auto;
+  margin: auto;
   text-align: center;
+  -webkit-clip-path: circle();
+          clip-path: circle();
 }
 
 .hero__name {
@@ -606,9 +611,59 @@ h1 {
   color: #febd69;
 }
 
+.flex-cont {
+  padding-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .flex-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 39px;
+    padding-right: 39px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.flex-elem {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .flex-elem {
+    width: calc((100% - 30px * 2) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flex-elem {
+    width: calc((100% - 30px * 3) / 4);
+  }
+}
+
 .portfolio-list {
   list-style-type: none;
   padding: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .portfolio-text {
@@ -620,6 +675,7 @@ h1 {
 }
 
 .portfolio-element {
+  width: 100%;
   border: 1px solid #232f3e;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -640,8 +696,10 @@ h1 {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-element:not(:last-child) {
-  margin-bottom: 20px;
+@media screen and (min-width: 480px) {
+  .portfolio-element {
+    width: calc((100% - 30px * 2) / 3);
+  }
 }
 
 .portfolio-link {
@@ -756,6 +814,7 @@ h1 {
       justify-content: space-around;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .footer a {
@@ -805,12 +864,12 @@ h1 {
   width: 50px;
   height: 50px;
   position: fixed;
-  bottom: 70px;
-  right: 30px;
+  bottom: 10%;
+  right: 10%;
   z-index: 99;
   border: none;
   outline: none;
-  background-color: pink;
+  background-color: #53cc9d;
   color: white;
   cursor: pointer;
   border-radius: 50%;

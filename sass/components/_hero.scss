@@ -148,9 +148,11 @@
 // }
 
 .hero__image {
-  width: 100%;
+  width: 300px;
   height: auto;
+  margin: auto;
   text-align: center;
+  clip-path: circle();
 }
 
 .hero__name {
