@@ -45,7 +45,8 @@
   text-align: center;
   background-color: $bg-secondary;
   transition: $transition;
-
+  margin-top: 0;
+  margin-bottom: 0;
   width: 100%;
   left: 0%;
 
@@ -69,8 +70,13 @@
 }
 
 .navigation__link:hover {
-  background-color: $bg-primary;
+  text-shadow: 0 0 10px #ff0;
+  // background-color: $bg-primary;
   transition: $transition;
+
+  @media screen and (min-width: 768px) {
+    text-shadow: 0 0 10px #ff0;
+  }
 }
 
 .navigation__link a {
