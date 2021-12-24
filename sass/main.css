@@ -740,7 +740,6 @@ h1 {
 
 .timeline {
   margin: 70px auto 0;
-  max-width: 320px;
   display: -ms-grid;
   display: grid;
   color: white;
@@ -796,6 +795,10 @@ h1 {
 
 .timeline__component--no-margin {
   margin-bottom: 0;
+}
+
+.timeline__title {
+  color: #febd69;
 }
 
 .footer {

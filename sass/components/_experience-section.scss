@@ -1,6 +1,6 @@
 .timeline {
   margin: 70px auto 0;
-  max-width: 320px;
+
   // padding: 25px;
   display: grid;
   color: white;
@@ -51,4 +51,8 @@
 
 .timeline__component--no-margin {
   margin-bottom: 0;
+}
+
+.timeline__title {
+  color: $accent;
 }
