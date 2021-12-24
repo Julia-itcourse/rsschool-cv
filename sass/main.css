@@ -891,4 +891,19 @@ h1 {
 .scroll-btn:hover {
   background-color: #febd69;
 }
+
+.code__container {
+  padding-top: 70px;
+}
+
+.code__content {
+  margin: auto;
+  display: block;
+  background-color: #131a22;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  color: grey;
+  overflow-x: auto;
+}
 /*# sourceMappingURL=main.css.map */

@@ -34,6 +34,9 @@
               <a href="#section-projects">Projects</a>
             </li>
             <li class="navigation__link">
+              <a href="#section-code-example">Code Example</a>
+            </li>
+            <li class="navigation__link">
               <a href="#section-experience">Experience</a>
             </li>
             <li class="navigation__link">
@@ -216,6 +219,25 @@
           </div>
         </div>
       </section>
+      <section
+        class="section section--light code-example"
+        id="section-code-example"
+      >
+        <div class="container">
+          <h3 class="section__title">Code example</h3>
+          <pre class="code__container">
+            <code class = "code__content">
+const burger = document.getElementById("burger");
+const navigationList = document.getElementById("navigation__list");
+        
+burger.addEventListener("click", () => {
+navigationList.classList.toggle("navigation__list--open");
+burger.classList.toggle("burger--close");
+});  
+            </code>
+          </pre>
+        </div>
+      </section>
       <section class="section" id="section-experience">
         <div class="container">
           <h3 class="section__title">Experience</h3>
@@ -273,10 +295,12 @@
             >
               <h4 class="timeline__title">Aurora Trade Ukraine</h4>
               <h5 class="timeline__description">Import Manager</h5>
-              <p class="timeline__description">
-                Conducting negotiations, placement of orders, monitoring and
-                reporting on Chinese suppliers' performance.
-              </p>
+              <ul>
+                <li>
+                  Conducting negotiations, placement of orders, monitoring and
+                  reporting on Chinese suppliers' performance.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
