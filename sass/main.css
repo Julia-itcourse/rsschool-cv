@@ -682,6 +682,10 @@ h1 {
   margin: 0;
 }
 
+.portfolio__image {
+  width: 100%;
+}
+
 .portfolio-element {
   width: 100%;
   border: 1px solid #232f3e;
@@ -689,6 +693,7 @@ h1 {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+  margin-bottom: 10px;
 }
 
 .portfolio-element:hover {
@@ -697,11 +702,21 @@ h1 {
 }
 
 .portfolio-element:hover .overlay-text {
-  -webkit-transform: translateY(-7%);
-          transform: translateY(-7%);
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
   opacity: 1;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-element:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio-element:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 480px) {

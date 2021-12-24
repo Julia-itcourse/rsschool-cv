@@ -13,6 +13,11 @@
 .portfolio-name {
   margin: 0;
 }
+
+.portfolio__image {
+  width: 100%;
+}
+
 .portfolio-element {
   width: 100%;
   border: 1px solid $bg-primary;
@@ -25,14 +30,19 @@
   }
 
   &:hover .overlay-text {
-    transform: translateY(-7%);
+    transform: translateY(-5%);
     opacity: 1;
     transition: $transition;
+    color: $bg-primary;
   }
 
-  // &:not(:last-child) {
-  //   margin-bottom: 20px;
-  // }
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 480px) {
+      margin-bottom: 0;
+    }
+  }
 
   @media screen and (min-width: 480px) {
     width: calc((100% - 30px * 2) / 3);
