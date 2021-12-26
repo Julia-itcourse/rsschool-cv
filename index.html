@@ -28,6 +28,9 @@
               <a href="#section-about-me">About Me</a>
             </li>
             <li class="navigation__link">
+              <a href="#section-contacts">Contacts</a>
+            </li>
+            <li class="navigation__link">
               <a href="#section-skills">Skills</a>
             </li>
             <li class="navigation__link">
@@ -42,7 +45,6 @@
             <li class="navigation__link">
               <a href="#section-education">Education</a>
             </li>
-            <li class="navigation__link"><a href="#section-cv">CV</a></li>
           </ul>
         </nav>
       </div>
@@ -73,11 +75,12 @@
       <section class="section about-section" id="section-about-me">
         <div class="container">
           <h3 class="section__title">About Me</h3>
-          <div class="section__content">
+          <div class="section__content about-me__content">
             <p>
-              For me front-end development is a creative journey, where I can
-              combine my passion for challenges, learning new things every day
-              and creating useful product.
+              For me development is a creative journey, where I can combine my
+              passion for challenges and hands-on learning. Why front-end? I'm a
+              visual kind of person and I love seeing how my code works. I am
+              interested in UX as well.
             </p>
             <p>
               My goal is to join a web application development team as a junior
@@ -85,32 +88,36 @@
               company where I could use my knowledge and skills to contribute to
               overall success.
             </p>
+            <p>Apart of coding, I enjoy travelling, hicking and painting.</p>
           </div>
         </div>
       </section>
-      <section class="section section--light">
+      <section class="section section--light" id="section-contacts">
+        <h3 class="section__title">Contacts</h3>
         <div class="container">
           <div class="contacts">
             <ul class="contacts__list">
               <li class="social__item">
                 <a
-                  href=""
+                  href="https://www.linkedin.com/in/julia-artemenko/"
                   aria-label="Link to Linkedin acount"
                   class="social__link"
+                  target="blank"
                 >
                   <svg class="social__icon">
-                    <use xlink:href="./assets/sprite.svg#facebook"></use>
+                    <use xlink:href="./assets/sprite.svg#linkedin"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a
-                  href=""
+                  href="https://github.com/Julia-itcourse"
                   aria-label="Link to Github account"
                   class="social__link"
+                  target="blank"
                 >
                   <svg class="social__icon">
-                    <use xlink:href="./assets/sprite.svg#twitter"></use>
+                    <use xlink:href="./assets/sprite.svg#github-logo"></use>
                   </svg>
                 </a>
               </li>
@@ -118,29 +125,31 @@
             <ul class="contacts__list">
               <li class="social__item">
                 <a
-                  href=""
-                  aria-label="Link to Linkedin acount"
+                  href="tel:+48-693-002-436"
+                  aria-label="Link to call"
                   class="social__link"
                 >
                   <svg class="social__icon">
-                    <use xlink:href="./assets/sprite.svg#facebook"></use>
+                    <use xlink:href="./assets/sprite.svg#phone-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a
-                  href=""
-                  aria-label="Link to Github account"
+                  href="mailto:juliaartemenko93@gmail.com"
+                  aria-label="Link to send email"
                   class="social__link"
                 >
                   <svg class="social__icon">
-                    <use xlink:href="./assets/sprite.svg#twitter"></use>
+                    <use xlink:href="./assets/sprite.svg#email-icon"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-          <a class="button" href="#" download> Download CV </a>
+          <a class="button" href="./assets/julia_artemenko_cv.pdf" download>
+            Download CV
+          </a>
         </div>
       </section>
 
@@ -206,7 +215,11 @@
           <div class="section__content">
             <ul class="portfolio-list">
               <li class="portfolio-element">
-                <a href="" class="portfolio-link">
+                <a
+                  href="https://github.com/irynazalata/react-project-slim-mom"
+                  class="portfolio-link"
+                  target="blank"
+                >
                   <div class="portfolio-wrap">
                     <img
                       class="image portfolio__image"
@@ -230,7 +243,11 @@
               </li>
 
               <li class="portfolio-element">
-                <a href="" class="portfolio-link">
+                <a
+                  href="https://github.com/Julia-itcourse/photo-search"
+                  class="portfolio-link"
+                  target="blank"
+                >
                   <div class="portfolio-wrap">
                     <img
                       class="image portfolio__image"
@@ -252,7 +269,11 @@
               </li>
 
               <li class="portfolio-element">
-                <a href="" class="portfolio-link">
+                <a
+                  href="https://github.com/Julia-itcourse/goit-react-hw-07-phonebook-1"
+                  class="portfolio-link"
+                  target="blank"
+                >
                   <div class="portfolio-wrap">
                     <img
                       class="image portfolio__image"
@@ -264,8 +285,7 @@
                       This is a phonebook app which helps to add, save and
                       filter your contacts. Made with React, Redux and styled
                       with CSS modules. Individual project initially written
-                      with react class components and later refactored to use
-                      modern hooks.
+                      with react class components.
                     </p>
                   </div>
 
