@@ -5,17 +5,17 @@
   margin: auto;
   margin-bottom: 40px;
   margin-top: 70px;
-}
 
-.contacts__list {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  display: flex;
-  margin: 0;
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    display: flex;
+    margin: 0;
 
-  padding: 10px;
+    padding: 10px;
+  }
 }
 .social__item {
   margin: 5px;

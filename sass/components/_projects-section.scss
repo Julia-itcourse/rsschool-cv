@@ -31,7 +31,7 @@
   }
 
   &:hover .overlay-text {
-    transform: translateY(0%);
+    transform: translateY(-6%);
     opacity: 1;
     transition: $transition;
 
@@ -55,11 +55,6 @@
   @media screen and (min-width: 1440px) {
     width: calc((100% - 30px * 2) / 3);
   }
-  // @media screen and (min-width: 768px) {
-  //   width: 768px;
-  //   padding-left: 39px;
-  //   padding-right: 39px;
-  // }
 }
 
 .portfolio-link {

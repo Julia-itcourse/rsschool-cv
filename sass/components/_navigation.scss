@@ -13,32 +13,32 @@
   background-position: center center;
   background-color: transparent;
   border: none;
+  margin-bottom: 10px;
 
   @media screen and (min-width: 768px) {
     display: none;
   }
-}
 
-.burger--close {
-  background-image: url("../../assets/close.png");
-  height: 20px;
-  width: 20px;
-}
-
-@keyframes swing {
-  0% {
-    transform: rotate(3deg);
+  &--close {
+    background-image: url("../../assets/close.png");
+    height: 20px;
+    width: 20px;
   }
-  100% {
-    transform: rotate(-3deg);
+
+  @keyframes swing {
+    0% {
+      transform: rotate(3deg);
+    }
+    100% {
+      transform: rotate(-3deg);
+    }
+  }
+
+  &:hover {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
   }
 }
-
-.burger:hover {
-  animation: swing ease-in-out 1s infinite alternate;
-  transform-origin: center -20px;
-}
-
 .navigation__list {
   padding: 0;
   display: none;
@@ -58,6 +58,7 @@
     background-color: $bg-primary;
   }
 }
+
 .navigation-list--open {
   display: block;
   z-index: 5;
@@ -71,7 +72,7 @@
 
 .navigation__link:hover {
   text-shadow: 0 0 10px #ff0;
-  // background-color: $bg-primary;
+
   transition: $transition;
 
   @media screen and (min-width: 768px) {
