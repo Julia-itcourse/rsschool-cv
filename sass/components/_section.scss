@@ -1,0 +1,30 @@
+.section {
+  padding: 30px 0;
+}
+
+.section--light {
+  background-color: $bg-secondary;
+}
+
+.section__title {
+  position: relative;
+  text-transform: uppercase;
+  margin: auto;
+  text-align: center;
+
+  &::after {
+    right: 50%;
+    transform: translate(50%);
+    top: 50px;
+    content: "";
+    position: absolute;
+    background: $accent;
+    width: 60px;
+    height: 4px;
+    opacity: 1;
+  }
+}
+
+.section__content {
+  margin-top: 70px;
+}

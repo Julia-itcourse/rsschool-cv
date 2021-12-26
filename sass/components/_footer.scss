@@ -1,0 +1,21 @@
+.footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.links-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.footer a {
+  color: $text;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: $accent;
+}
