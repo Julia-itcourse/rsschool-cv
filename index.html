@@ -93,7 +93,7 @@
         </div>
       </section>
       <section class="section section--light" id="section-contacts">
-        <h3 class="section__title">Contacts</h3>
+        <h3 class="section__title section__title--hidden">Contacts</h3>
         <div class="container">
           <div class="contacts">
             <ul class="contacts__list">
@@ -503,6 +503,15 @@ burger.classList.toggle("burger--close");
       burger.addEventListener("click", () => {
         navigationList.classList.toggle("navigation-list--open");
         burger.classList.toggle("burger--close");
+      });
+
+      const navItems = document.querySelectorAll(".navigation__link");
+      console.log(navItems);
+
+      navItems.forEach((el) => {
+        el.addEventListener("click", () => {
+          navigationList.classList.toggle("navigation-list--open");
+        });
       });
 
       scrollBtn = document.getElementById("scroll-btn");
