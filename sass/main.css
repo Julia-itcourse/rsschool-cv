@@ -420,7 +420,7 @@ h1 {
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .navigation {
     display: none;
   }
@@ -446,7 +446,7 @@ h1 {
   left: 0%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .navigation__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -467,7 +467,7 @@ h1 {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .navigation__link:hover {
     text-shadow: 0 0 10px #ff0;
   }
@@ -481,7 +481,7 @@ h1 {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .hamburger {
     display: block;
     z-index: 200;
@@ -526,9 +526,9 @@ h1 {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .menu-wrap {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -544,28 +544,28 @@ h1 {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .menu-wrap.is-open {
-    position: fixed;
+    top: 90px;
+    position: absolute;
     overflow: hidden;
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
-    background-color: rgba(0, 0, 0, 0.5);
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .menu-wrap.is-open .menu {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    background-color: #37475a;
+    background-color: #232f3e;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .menu {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);

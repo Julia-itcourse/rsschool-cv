@@ -42,7 +42,7 @@
 // }
 .navigation {
   display: block;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     display: none;
   }
 }
@@ -61,7 +61,7 @@
   width: 100%;
   left: 0%;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     display: flex;
   }
 }
@@ -83,7 +83,7 @@
 
   transition: $transition;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     text-shadow: 0 0 10px #ff0;
   }
 }
@@ -95,7 +95,7 @@
 .hamburger {
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     display: block;
     z-index: 200;
     width: 50px;
@@ -146,8 +146,8 @@
 .menu-wrap {
   display: none;
 
-  @media screen and (max-width: 768px) {
-    position: absolute;
+  @media screen and (max-width: 1200px) {
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -161,26 +161,27 @@
 }
 
 .menu-wrap.is-open {
-  @media screen and (max-width: 768px) {
-    position: fixed;
+  @media screen and (max-width: 1200px) {
+    top: 90px;
+    position: absolute;
     overflow: hidden;
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
 
-    background-color: rgba(0, 0, 0, 0.5);
+    // background-color: rgba(0, 0, 0, 0.5);
     transition: 0.5s;
   }
   & .menu {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       transform: translateX(0);
-      background-color: $bg-secondary;
+      background-color: $bg-primary;
     }
   }
 }
 
 .menu {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     transform: translateX(100%);
     transition: 0.5s;
 
