@@ -479,11 +479,13 @@ h1 {
 
 .hamburger {
   display: none;
+  position: relative;
 }
 
 @media screen and (max-width: 1200px) {
   .hamburger {
     display: block;
+    position: relative;
     z-index: 200;
     width: 50px;
     margin-left: auto;
@@ -546,12 +548,13 @@ h1 {
 
 @media screen and (max-width: 1200px) {
   .menu-wrap.is-open {
-    top: 90px;
+    top: 0;
     position: absolute;
     overflow: hidden;
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
+    background-color: rgba(0, 0, 0, 0.5);
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
