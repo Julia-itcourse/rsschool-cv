@@ -16,12 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./dist/css/main.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
     <header class="page-header">
       <div class="container">
-        <button class="burger" id="burger" title="Open menu"></button>
+        <!-- <button class="burger" id="burger" title="Open menu"></button> -->
         <nav class="navigation">
           <ul class="navigation__list" id="navigation-list">
             <li class="navigation__link">
@@ -47,6 +47,52 @@
             </li>
           </ul>
         </nav>
+        <div class="hamburger" id="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+        <div class="menu-wrap" id="menu-wrap">
+          <div class="menu">
+            <ul class="list navigation-menu__list">
+              <li class="navigation__link">
+                <a href="#section-about-me" class="navigation-menu__link"
+                  >About Me</a
+                >
+              </li>
+              <li class="navigation__link">
+                <a href="#section-contacts" class="navigation-menu__link"
+                  >Contacts</a
+                >
+              </li>
+              <li class="navigation__link">
+                <a href="#section-skills" class="navigation-menu__link"
+                  >Skills</a
+                >
+              </li>
+              <li class="navigation__link">
+                <a href="#section-projects" class="navigation-menu__link"
+                  >Projects</a
+                >
+              </li>
+              <li class="navigation__link">
+                <a href="#section-code-example" class="navigation-menu__link"
+                  >Code Example</a
+                >
+              </li>
+              <li class="navigation__link">
+                <a href="#section-experience" class="navigation-menu__link"
+                  >Experience</a
+                >
+              </li>
+              <li class="navigation__link">
+                <a href="#section-education" class="navigation-menu__link"
+                  >Education</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <div class="hero">
@@ -364,10 +410,7 @@ burger.classList.toggle("burger--close");
               <div class="timeline__point timeline__point--bottom"></div>
             </div>
             <div
-              class="
-                timeline__component timeline__component--bg
-                .timeline__component--no-margin
-              "
+              class="timeline__component timeline__component--bg .timeline__component--no-margin"
             >
               <h4 class="timeline__title">Aurora Trade Ukraine</h4>
               <h5 class="timeline__description">Import Manager</h5>
@@ -399,10 +442,7 @@ burger.classList.toggle("burger--close");
               <div class="timeline__date">Dec. 2021-now</div>
             </div>
             <div
-              class="
-                timeline__component timeline__component--bg-dark
-                .timeline__component--no-margin
-              "
+              class="timeline__component timeline__component--bg-dark .timeline__component--no-margin"
             >
               <h4 class="timeline__title">GoIT courses</h4>
               <p class="timeline__description">
@@ -433,10 +473,7 @@ burger.classList.toggle("burger--close");
               <div class="timeline__date">Sept.2010 - July 2011</div>
             </div>
             <div
-              class="
-                timeline__component timeline__component--bg-dark
-                .timeline__component--no-margin
-              "
+              class="timeline__component timeline__component--bg-dark .timeline__component--no-margin"
             >
               <h4 class="timeline__title">
                 Kharkiv State Pedagogical University

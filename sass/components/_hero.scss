@@ -6,6 +6,7 @@
 }
 
 .hero__subtitle {
+  font-size: 20px;
   font-weight: 200;
   text-align: center;
   color: $accent-btn;
@@ -29,4 +30,8 @@
 
 .hero__name {
   color: $accent;
+}
+
+.hero {
+  padding-top: 20px;
 }
